@@ -6,19 +6,15 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.listen(5050, () => {
-    console.log(' _');
-    console.log(' H');
-    console.log(' H    - FakeTower');
-    console.log('[H]');
+    console.log('/\\');
+    console.log('[]');
+    console.log('[] - TestTower');
+    console.log('[]');
     console.log("Server running on port 5050");
 });
 
 app.get("/api", (req, res) => {
-    res.json({ "message": "Welcome to the Test/FakeTower API" });
-});
-
-app.get("*", (req, res) => {
-    res.json({ "message": "fallback!" });
+    res.json({ "message": "Welcome to the Mock API" });
 });
 
 /**
@@ -46,14 +42,24 @@ app.get("/api/debugchar", (req, res) => {
     res.json(mockCharacter);
 });
 
+/**
+ * @description FALLBACK ROUTE
+ */
+app.get("*", (req, res) => {
+    res.json({ "message": "fallback! route is incorrect" });
+});
+
+/**
+ * @description MOCK CHARACTER
+ */
 const mockCharacter = {
     "name": "Mock Name",
     "faction": "Dugo",
     "skills": [
-        { "name": "engineering", "level": 1, "sub_skills": [ { "name": "engineering_1", } ] },
+        { "name": "engineering", "level": 1, "sub_skills": [{ "name": "engineering_1", }] },
         { "name": "informatica", "level": 1, "sub_skills": [{ "name": "informatica_1", }] },
         { "name": "biochemist", "level": 1, "sub_skills": [{ "name": "biochemist_1", }] },
-        { "name": "ballistics", "level": 1, "sub_skills": [ { "name": "ballistics_1", } ] },
+        { "name": "ballistics", "level": 1, "sub_skills": [{ "name": "ballistics_1", }] },
         { "name": "melee", "level": 1, "sub_skills": [{ "name": "melee_1", }] },
         { "name": "willpower", "level": 1, "sub_skills": [{ "name": "willpower_1", }] },
         { "name": "condition", "level": 1, "sub_skills": [{ "name": "condition_1", }] },
