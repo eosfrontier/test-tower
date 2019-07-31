@@ -35,7 +35,7 @@ app.post("/api/char", (req, res) => {
     } else {
         console.log('*2 - no "characterId" sent with post');
     }
-    res.json({ "message": "Something did not go right yet - See console logs!"});
+    res.json({ "message": "Something did not go right yet - See console logs!" });
 });
 
 app.get("/api/debugchar", (req, res) => {
@@ -53,24 +53,34 @@ app.get("*", (req, res) => {
  * @description MOCK CHARACTER
  */
 const mockCharacter = {
-    "name": "Mock Name",
-    "faction": "Dugo",
+    "name": "Marcus Lucius Testus",
+    "faction": "Aquila",
+    "id": 451,
+    "iccNumber": "1337 0451 9999",
     "skills": [
-        { "name": "engineering", "level": 1, "sub_skills": [{ "name": "engineering_1", }] },
-        { "name": "informatica", "level": 1, "sub_skills": [{ "name": "informatica_1", }] },
-        { "name": "biochemist", "level": 1, "sub_skills": [{ "name": "biochemist_1", }] },
-        { "name": "ballistics", "level": 1, "sub_skills": [{ "name": "ballistics_1", }] },
-        { "name": "melee", "level": 3, "sub_skills": [{ "name": "melee_1", }, { "name": "melee_2", }, { "name": "melee_3", }] },
-        { "name": "willpower", "level": 1, "sub_skills": [{ "name": "willpower_1", }] },
-        { "name": "condition", "level": 1, "sub_skills": [{ "name": "condition_1", }] },
-        { "name": "protection", "level": 1, "sub_skills": [{ "name": "protection_1", }] },
-        { "name": "dexterity", "level": 1, "sub_skills": [{ "name": "dexterity_1", }] },
-        { "name": "mining", "level": 1, "sub_skills": [{ "name": "mining_1", }] },
-        { "name": "economics", "level": 1, "sub_skills": [{ "name": "economics_1", }] },
-        { "name": "politics", "level": 1, "sub_skills": [{ "name": "politics_1", }] },
-        { "name": "analytics", "level": 1, "sub_skills": [{ "name": "analytics_1", }] },
-        { "name": "psychic", "level": 1, "sub_skills": [{ "name": "psychic_1", }] },
-        { "name": "surgery", "level": 1, "sub_skills": [{ "name": "surgery_1", }] },
-        { "name": "firstaid", "level": 1, "sub_skills": [{ "name": "firstaid_1", }] }
+        { "group": "engineering", "specialty": false, "level": 1, "sub_skills": [{ "name": "engineering_1", }] },
+        { "group": "informatica", "specialty": false, "level": 1, "sub_skills": [{ "name": "informatica_1", }] },
+        { "group": "biochemist", "specialty": false, "level": 1, "sub_skills": [{ "name": "biochemist_1", }] },
+        { "group": "ballistics", "specialty": false, "level": 1, "sub_skills": [{ "name": "ballistics_1", }] },
+        {
+            "group": "melee",
+            "level": 3,
+            "sub_skills": [
+                { "name": "melee_1", },
+                { "name": "melee_2", },
+                { "name": "melee_3", }
+            ]
+        },
+        { "group": "willpower", "specialty": false, "level": 1, "sub_skills": [{ "name": "willpower_1", }] },
+        { "group": "condition", "specialty": false, "level": 1, "sub_skills": [{ "name": "condition_1", }] },
+        { "group": "protection", "specialty": false, "level": 1, "sub_skills": [{ "name": "protection_1", }] },
+        { "group": "dexterity", "specialty": false, "level": 1, "sub_skills": [{ "name": "dexterity_1", }] },
+        { "group": "mining", "specialty": false, "level": 1, "sub_skills": [{ "name": "mining_1", }] },
+        { "group": "economics", "specialty": false, "level": 1, "sub_skills": [{ "name": "economics_1", }] },
+        { "group": "politics", "specialty": false, "level": 1, "sub_skills": [{ "name": "politics_1", }] },
+        { "group": "analytics", "specialty": false, "level": 1, "sub_skills": [{ "name": "analytics_1", }] },
+        { "group": "psychic", "specialty": false, "level": 1, "sub_skills": [{ "name": "psychic_1", }] },
+        { "group": "surgery", "specialty": false, "level": 1, "sub_skills": [{ "name": "surgery_1", }] },
+        { "group": "firstaid", "specialty": false, "level": 1, "sub_skills": [{ "name": "firstaid_1", }] }
     ]
 }
