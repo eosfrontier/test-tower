@@ -60,7 +60,7 @@ const mockCharacter = {
         { "name": "informatica", "level": 1, "sub_skills": [{ "name": "informatica_1", }] },
         { "name": "biochemist", "level": 1, "sub_skills": [{ "name": "biochemist_1", }] },
         { "name": "ballistics", "level": 1, "sub_skills": [{ "name": "ballistics_1", }] },
-        { "name": "melee", "level": 1, "sub_skills": [{ "name": "melee_1", }] },
+        { "name": "melee", "level": 3, "sub_skills": [{ "name": "melee_1", }, { "name": "melee_2", }, { "name": "melee_3", }] },
         { "name": "willpower", "level": 1, "sub_skills": [{ "name": "willpower_1", }] },
         { "name": "condition", "level": 1, "sub_skills": [{ "name": "condition_1", }] },
         { "name": "protection", "level": 1, "sub_skills": [{ "name": "protection_1", }] },
