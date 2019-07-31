@@ -1,0 +1,27 @@
+{
+  "name": "test-tower",
+  "version": "1.0.0",
+  "description": "fake API for eos data",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eosfrontier/test-tower.git"
+  },
+  "keywords": [
+    "api",
+    "mock"
+  ],
+  "author": "Thijs/Maati",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eosfrontier/test-tower/issues"
+  },
+  "homepage": "https://github.com/eosfrontier/test-tower#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  }
+}
